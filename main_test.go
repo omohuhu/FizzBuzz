@@ -51,4 +51,12 @@ func TestFizzBuzz(t *testing.T) {
 		}
 	})
 
+	t.Run("fizzBuzz7", func(t *testing.T) {
+		get := fizzBuzz(7)
+		want := "7"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
 }
