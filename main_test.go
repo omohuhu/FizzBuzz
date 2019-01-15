@@ -83,4 +83,44 @@ func TestFizzBuzz(t *testing.T) {
 		}
 	})
 
+	t.Run("fizzBuzz11", func(t *testing.T) {
+		get := fizzBuzz(11)
+		want := "11"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
+	t.Run("fizzBuzz12", func(t *testing.T) {
+		get := fizzBuzz(12)
+		want := "Fizz"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
+	t.Run("fizzBuzz13", func(t *testing.T) {
+		get := fizzBuzz(13)
+		want := "13"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
+	t.Run("fizzBuzz14", func(t *testing.T) {
+		get := fizzBuzz(14)
+		want := "14"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
+	t.Run("fizzBuzz15", func(t *testing.T) {
+		get := fizzBuzz(15)
+		want := "FizzBuzz"
+		if want != get {
+			t.Errorf("Error %s %s", want, get)
+		}
+	})
+
 }
