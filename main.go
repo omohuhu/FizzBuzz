@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -10,13 +11,13 @@ func main() {
 }
 
 func fizzBuzz(data int) string {
-	if data == 1 {
-		return "1"
-	} else if data == 2 {
-        return "2"
-    } else if data == 3 {
+	if data % 3 == 0 && data % 5 == 0 {
+		return "FizzBuzz"
+	} else if data % 3 == 0 {
         return "Fizz"
+    } else if data % 5 == 0 {
+        return "Buzz"
     } else {
-		return "I Don't Know"
+		return strconv.Itoa(data)
 	}
 }
